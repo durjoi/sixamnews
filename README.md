@@ -63,5 +63,3 @@ $ Username: admin
 $ Password: admin
 ```
 
-Now activate **_industrydive_** theme from the theme panel. And add a custom logo form the **_customizer>header area_**. 
-
