@@ -31,10 +31,10 @@ Code Link [https://github.com/durjoi/sixamnews.git](https://github.com/durjoi/si
     ├   ├── upgrade
     ├   ├── uploads
     ├   ├── index.php
-    ├── docker-compose.yml          # Docker compose file
-    ├── README.md                   # Documentation file
-    ├── uploads.ini                 # php ini overwriting file
-    ├── wordpress.sql               # dummy database
+    ├── docker-compose.yml                    # Docker compose file
+    ├── README.md                             # Documentation file
+    ├── uploads.ini                           # php ini overwriting file
+    ├── wordpress.sql                         # dummy database
 
 
 ### Running the project
@@ -63,5 +63,5 @@ $ Username: admin
 $ Password: admin
 ```
 
-Now activate 'industrydive' theme from the theme panel. And add a custom logo form the customizer>header area. 
+Now activate **_industrydive_** theme from the theme panel. And add a custom logo form the **_customizer>header_** area. 
 
