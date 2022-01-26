@@ -157,7 +157,7 @@ function filter_projects() {
   }
 
   add_action('wp_ajax_filter_projects', 'filter_projects');
-//   add_action('wp_ajax_nopriv_filter_projects', 'filter_projects');
+  add_action('wp_ajax_nopriv_filter_projects', 'filter_projects');
 
 
 function more_post_ajax(){
@@ -197,6 +197,7 @@ function more_post_ajax(){
 }
 
 add_action('wp_ajax_more_post_ajax', 'more_post_ajax');
+add_action('wp_ajax_nopriv_more_post_ajax', 'more_post_ajax');
 
 // Adding font awsome 
 function pe_fontawesome(){
