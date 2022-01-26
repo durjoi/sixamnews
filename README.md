@@ -51,4 +51,17 @@ Run docker
 $ docker-compose up -d
 ```
 
-Open browser and visit [127.0.0.1:9210](http://127.0.0.1:9210) for website and [127.0.0.1:9211](http://127.0.0.1:9211) for phpmyadmin.
+Open browser and visit [127.0.0.1:9210](http://127.0.0.1:9210) for website and [127.0.0.1:9211](http://127.0.0.1:9211) for phpmyadmin. <br/>
+
+Now import table to the database <br/>
+Drop all the default table and add import 'wordpress.sql' to the database from phpmyadmin. <br/> <br/>
+
+Now open wordpress admin [127.0.0.1:9210/wp-admin](http://127.0.0.1:9210/wp-admin) and login with below credentials.
+
+```
+$ Username: admin
+$ Password: admin
+```
+
+Now activate 'industrydive' theme from the theme panel. And add a custom logo form the customizer>header area. 
+
