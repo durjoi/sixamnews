@@ -1,8 +1,8 @@
 # Six Am News
 ###### A project for making wordpress custom theme
 
-Live Link [sixamnews.durjoi.com](http://sixamnews.durjoi.com)
-Code Link [github](http://sixamnews.durjoi.com)
+Live Link [sixamnews.durjoi.com](http://sixamnews.durjoi.com) <br/>
+Code Link [https://github.com/durjoi/sixamnews.git](https://github.com/durjoi/sixamnews.git)
 
 ### Folder Structure
 
@@ -42,8 +42,8 @@ Code Link [github](http://sixamnews.durjoi.com)
 Clone the repository
 
 ```
-$ git clone repourl
-$ cd foldername
+$ git clone https://github.com/durjoi/sixamnews.git
+$ cd sixamnews
 ```
 Run docker
 
@@ -51,4 +51,4 @@ Run docker
 $ docker-compose up -d
 ```
 
-Open browser and visit [127.0.0.1:9210](127.0.0.1:9210) for website and [127.0.0.1:9211](127.0.0.1:9211) for phpmyadmin.
+Open browser and visit [127.0.0.1:9210](http://127.0.0.1:9210) for website and [127.0.0.1:9211](http://127.0.0.1:9211) for phpmyadmin.
