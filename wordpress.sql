@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Generation Time: Jan 26, 2022 at 08:09 AM
+-- Generation Time: Jan 26, 2022 at 08:23 AM
 -- Server version: 10.6.5-MariaDB-1:10.6.5+maria~focal
 -- PHP Version: 7.4.20
 
@@ -253,7 +253,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (114, 'widget_tag_cloud', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (115, 'widget_nav_menu', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (116, 'widget_custom_html', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
-(117, '_transient_doing_cron', '1643184522.8395531177520751953125', 'yes'),
+(117, '_transient_doing_cron', '1643185304.2811770439147949218750', 'yes'),
 (118, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:2:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:7:\"upgrade\";s:8:\"download\";s:57:\"https://downloads.wordpress.org/release/wordpress-5.9.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:57:\"https://downloads.wordpress.org/release/wordpress-5.9.zip\";s:10:\"no_content\";s:68:\"https://downloads.wordpress.org/release/wordpress-5.9-no-content.zip\";s:11:\"new_bundled\";s:69:\"https://downloads.wordpress.org/release/wordpress-5.9-new-bundled.zip\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:3:\"5.9\";s:7:\"version\";s:3:\"5.9\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.9\";s:15:\"partial_version\";s:0:\"\";}i:1;O:8:\"stdClass\":11:{s:8:\"response\";s:10:\"autoupdate\";s:8:\"download\";s:57:\"https://downloads.wordpress.org/release/wordpress-5.9.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:57:\"https://downloads.wordpress.org/release/wordpress-5.9.zip\";s:10:\"no_content\";s:68:\"https://downloads.wordpress.org/release/wordpress-5.9-no-content.zip\";s:11:\"new_bundled\";s:69:\"https://downloads.wordpress.org/release/wordpress-5.9-new-bundled.zip\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:3:\"5.9\";s:7:\"version\";s:3:\"5.9\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.9\";s:15:\"partial_version\";s:0:\"\";s:9:\"new_files\";s:1:\"1\";}}s:12:\"last_checked\";i:1643168349;s:15:\"version_checked\";s:5:\"5.8.3\";s:12:\"translations\";a:0:{}}', 'no'),
 (122, '_site_transient_update_themes', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1643168353;s:7:\"checked\";a:4:{s:12:\"industrydive\";s:1:\"1\";s:14:\"twentynineteen\";s:3:\"2.1\";s:12:\"twentytwenty\";s:3:\"1.8\";s:15:\"twentytwentyone\";s:3:\"1.4\";}s:8:\"response\";a:3:{s:14:\"twentynineteen\";a:6:{s:5:\"theme\";s:14:\"twentynineteen\";s:11:\"new_version\";s:3:\"2.2\";s:3:\"url\";s:44:\"https://wordpress.org/themes/twentynineteen/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/theme/twentynineteen.2.2.zip\";s:8:\"requires\";s:5:\"4.9.6\";s:12:\"requires_php\";s:5:\"5.2.4\";}s:12:\"twentytwenty\";a:6:{s:5:\"theme\";s:12:\"twentytwenty\";s:11:\"new_version\";s:3:\"1.9\";s:3:\"url\";s:42:\"https://wordpress.org/themes/twentytwenty/\";s:7:\"package\";s:58:\"https://downloads.wordpress.org/theme/twentytwenty.1.9.zip\";s:8:\"requires\";s:3:\"4.7\";s:12:\"requires_php\";s:5:\"5.2.4\";}s:15:\"twentytwentyone\";a:6:{s:5:\"theme\";s:15:\"twentytwentyone\";s:11:\"new_version\";s:3:\"1.5\";s:3:\"url\";s:45:\"https://wordpress.org/themes/twentytwentyone/\";s:7:\"package\";s:61:\"https://downloads.wordpress.org/theme/twentytwentyone.1.5.zip\";s:8:\"requires\";s:3:\"5.3\";s:12:\"requires_php\";s:3:\"5.6\";}}s:9:\"no_update\";a:0:{}s:12:\"translations\";a:0:{}}', 'no'),
 (123, '_site_transient_timeout_browser_fc661a25971afd52f7714fe88867b744', '1643641148', 'no'),
@@ -263,7 +263,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (127, 'can_compress_scripts', '0', 'no'),
 (140, 'theme_mods_twentytwentyone', 'a:1:{s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1643037253;s:4:\"data\";a:3:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:3:{i:0;s:7:\"block-2\";i:1;s:7:\"block-3\";i:2;s:7:\"block-4\";}s:9:\"sidebar-2\";a:2:{i:0;s:7:\"block-5\";i:1;s:7:\"block-6\";}}}}', 'yes'),
 (141, 'current_theme', 'Industry Dive', 'yes'),
-(142, 'theme_mods_industrydive', 'a:4:{i:0;b:0;s:18:\"nav_menu_locations\";a:1:{s:9:\"main_menu\";i:179;}s:18:\"custom_css_post_id\";i:-1;s:17:\"industrydive_logo\";s:61:\"http://localhost:9210/wp-content/uploads/2022/01/dum-logo.png\";}', 'yes'),
+(142, 'theme_mods_industrydive', 'a:4:{i:0;b:0;s:18:\"nav_menu_locations\";a:1:{s:9:\"main_menu\";i:179;}s:18:\"custom_css_post_id\";i:-1;s:17:\"industrydive_logo\";s:61:\"http://localhost:9210/wp-content/uploads/2022/01/logo-new.png\";}', 'yes'),
 (143, 'theme_switched', '', 'yes'),
 (145, 'widget_recent-comments', 'a:2:{i:1;a:0:{}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (146, 'widget_recent-posts', 'a:2:{i:1;a:0:{}s:12:\"_multiwidget\";i:1;}', 'yes'),
@@ -1241,7 +1241,12 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (1108, 1909, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:280;s:6:\"height\";i:140;s:4:\"file\";s:20:\"2022/01/dum-logo.png\";s:5:\"sizes\";a:1:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:20:\"dum-logo-150x140.png\";s:5:\"width\";i:150;s:6:\"height\";i:140;s:9:\"mime-type\";s:9:\"image/png\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
 (1109, 1910, '_wp_trash_meta_status', 'publish'),
 (1110, 1910, '_wp_trash_meta_time', '1643184554'),
-(1111, 1910, 'meta-checkbox', '');
+(1111, 1910, 'meta-checkbox', ''),
+(1112, 1911, '_wp_attached_file', '2022/01/logo-new.png'),
+(1113, 1911, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:200;s:6:\"height\";i:80;s:4:\"file\";s:20:\"2022/01/logo-new.png\";s:5:\"sizes\";a:1:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:19:\"logo-new-150x80.png\";s:5:\"width\";i:150;s:6:\"height\";i:80;s:9:\"mime-type\";s:9:\"image/png\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(1114, 1912, '_wp_trash_meta_status', 'publish'),
+(1115, 1912, '_wp_trash_meta_time', '1643185348'),
+(1116, 1912, 'meta-checkbox', '');
 
 -- --------------------------------------------------------
 
@@ -1532,7 +1537,9 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (1907, 1, '2022-01-26 03:41:51', '2022-01-26 03:41:51', '', 'wqe', '', 'inherit', 'open', 'closed', '', 'wqe', '', '', '2022-01-26 03:41:51', '2022-01-26 03:41:51', '', 1906, 'http://localhost:9210/wp-content/uploads/2022/01/wqe.jpeg', 0, 'attachment', 'image/jpeg', 0),
 (1908, 1, '2022-01-26 03:41:57', '2022-01-26 03:41:57', '<!-- wp:paragraph -->\n<p>Gillnets are one of the most extensively used fishing gear in coastal regions throughout the world’s oceans, but often&nbsp;they catch animals - like sharks, sea turtles, marine mammals, seabirds, and fish - that aren’t targeted by fishers. By the time they are found these animals are often dead or injured, and tend to get dumped overboard even though they are listed as an endangered, threatened, and/or protected species. The incidental capture of non-target species – known as “bycatch” – in coastal gillnet fisheries has contributed to declines in endangered species worldwide and has also impacted coastal ecosystems.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Many wondered if there would be a way to allow gillnetting to continue while also sparing countless lives... many believed there wasn’t an answer. Yet, in a win-win for commercial fisheries, marine wildlife, and consservationists, <a rel=\"noreferrer noopener\" href=\"https://www.cell.com/current-biology/fulltext/S0960-9822(21)01737-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0960982221017371%3Fshowall%3Dtrue\" target=\"_blank\">researchers have found that using lighted nets</a> greatly reduced accidental bycatch of sharks, rays, sea turtles, and unwanted finfish.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Led by Assistant Research Professor of Arizona State University Jesse Senko, the team found lighted gillnets reduced total fisheries bycatch by 63%, which included a 95% reduction in sharks, skates, and rays, an 81% reduction in Humboldt squid, and a 48% reduction in unwanted finfish, while maintaining catch rates and market value of target fish. “These results demonstrate that the potential benefits of illuminated nets extend well beyond sea turtles, while demonstrating the strong promise for net illumination to mitigate discarded bycatch in similar coastal gillnet fisheries throughout the world’s oceans,” said Senko.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Gillnets, a wall or curtain of netting that hangs vertically in the water column and is anchored to the ocean floor at either end, are normally used in shelf waters less than 100m deep. Fish swim into the net and are entangled by their gills, fins, and spines. “Gillnets are ubiquitous because they are inexpensive and catch everything that passes them. This work is exciting because it provides a practical solution increasing gillnets\' selectivity and avoiding their bycatch,” said Hoyt Peckham, a co-author on the study and Director of Small-scale Fisheries at the Wildlife Conservation Society.</p>\n<!-- /wp:paragraph -->', 'Lighted Nets Dramatically Reduce Bycatch Of Sharks', '', 'inherit', 'closed', 'closed', '', '1906-revision-v1', '', '', '2022-01-26 03:41:57', '2022-01-26 03:41:57', '', 1906, 'http://localhost:9210/?p=1908', 0, 'revision', '', 0),
 (1909, 1, '2022-01-26 08:09:08', '2022-01-26 08:09:08', '', 'dum-logo', '', 'inherit', 'open', 'closed', '', 'dum-logo', '', '', '2022-01-26 08:09:08', '2022-01-26 08:09:08', '', 0, 'http://localhost:9210/wp-content/uploads/2022/01/dum-logo.png', 0, 'attachment', 'image/png', 0),
-(1910, 1, '2022-01-26 08:09:14', '2022-01-26 08:09:14', '{\n    \"industrydive::industrydive_logo\": {\n        \"value\": \"http://localhost:9210/wp-content/uploads/2022/01/dum-logo.png\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2022-01-26 08:09:14\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', 'ed70e661-e163-419d-af34-e4e4fa33456f', '', '', '2022-01-26 08:09:14', '2022-01-26 08:09:14', '', 0, 'http://localhost:9210/?p=1910', 0, 'customize_changeset', '', 0);
+(1910, 1, '2022-01-26 08:09:14', '2022-01-26 08:09:14', '{\n    \"industrydive::industrydive_logo\": {\n        \"value\": \"http://localhost:9210/wp-content/uploads/2022/01/dum-logo.png\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2022-01-26 08:09:14\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', 'ed70e661-e163-419d-af34-e4e4fa33456f', '', '', '2022-01-26 08:09:14', '2022-01-26 08:09:14', '', 0, 'http://localhost:9210/?p=1910', 0, 'customize_changeset', '', 0),
+(1911, 1, '2022-01-26 08:22:23', '2022-01-26 08:22:23', '', 'logo-new', '', 'inherit', 'open', 'closed', '', 'logo-new', '', '', '2022-01-26 08:22:23', '2022-01-26 08:22:23', '', 0, 'http://localhost:9210/wp-content/uploads/2022/01/logo-new.png', 0, 'attachment', 'image/png', 0),
+(1912, 1, '2022-01-26 08:22:28', '2022-01-26 08:22:28', '{\n    \"industrydive::industrydive_logo\": {\n        \"value\": \"http://localhost:9210/wp-content/uploads/2022/01/logo-new.png\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2022-01-26 08:22:28\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '044e0063-1ce3-4564-9a54-08cb52e585da', '', '', '2022-01-26 08:22:28', '2022-01-26 08:22:28', '', 0, 'http://localhost:9210/?p=1912', 0, 'customize_changeset', '', 0);
 
 -- --------------------------------------------------------
 
@@ -2377,13 +2384,13 @@ ALTER TABLE `wp_options`
 -- AUTO_INCREMENT for table `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1112;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1117;
 
 --
 -- AUTO_INCREMENT for table `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1911;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1913;
 
 --
 -- AUTO_INCREMENT for table `wp_termmeta`
