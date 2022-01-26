@@ -494,6 +494,7 @@ Latest Article Section CSS
     padding: 0;
     margin: 0;
     width: 60%;
+    background: transparent;
 }
 
 .select-box select:focus-visible {
