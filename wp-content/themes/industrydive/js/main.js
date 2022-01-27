@@ -53,7 +53,6 @@ for(let i = 0; i < elements.length; i++) {
       var pageNumber = 0;
 
       function load_posts(ppp){
-          console.log('working');
         pageNumber++;
         var cat = $('#category_filter').val();
         // 

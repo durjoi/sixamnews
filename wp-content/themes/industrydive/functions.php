@@ -206,7 +206,6 @@ function pe_fontawesome(){
  add_action('wp_enqueue_scripts','pe_fontawesome');
 
 
-
  //estimated reading time
 function reading_time($post_id) {
     $content = get_post_field( 'post_content', $post_id );
@@ -214,12 +213,18 @@ function reading_time($post_id) {
     $readingtime = ceil($word_count / 200);
     
     if ($readingtime == 1) {
-        $timer = " minute";
+        $timer = " minute. Read";
     } else {
-        $timer = " minutes";
+        $timer = " minutes. Read";
     }
 
     $totalreadingtime = $readingtime . $timer;
     return $totalreadingtime;
 }
     
+
+add_filter( 'allowed_http_origins', 'add_allowed_origins' );
+function add_allowed_origins( $origins ) {
+    $origins[] = 'https:127.0.0.1:9210';
+    return $origins;
+}
