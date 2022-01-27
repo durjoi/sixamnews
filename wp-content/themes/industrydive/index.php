@@ -2,6 +2,15 @@
     get_header();
     ?>
     <main>
+        <section class="breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p><?php get_breadcrumb(); ?></p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="featured_banner" style="background-image: url(<?php echo get_template_directory_uri().'/img/banner.jpg' ?>)">
         
             <div class="container h-100">

@@ -135,6 +135,21 @@ Header CSS
 } */
 
  
+.breadcrumb {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F4493;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+}
+.breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+}
+
 
 
 
@@ -509,7 +524,7 @@ Latest Article Section CSS
 
 #site-footer {
     height: 200px;
-    background: rgb(205, 205, 205);
+    background: #E2E3E4;
 }
 
 #footer_nav {

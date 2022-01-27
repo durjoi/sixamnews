@@ -228,3 +228,26 @@ function add_allowed_origins( $origins ) {
     $origins[] = 'https:127.0.0.1:9210';
     return $origins;
 }
+
+// Breadcrumbs 
+function get_breadcrumb() {
+    echo '<a href="'.home_url().'" rel="nofollow">Home</a>';
+    if (is_category() || is_single()) {
+        echo "&nbsp;&nbsp;>&nbsp;&nbsp;";
+        the_category(' > ');
+            if (is_single()) {
+                echo " &nbsp;&nbsp;>&nbsp;&nbsp; ";
+                the_title();
+            }
+    } elseif (is_page()) {
+        echo "&nbsp;&nbsp;>&nbsp;&nbsp;";
+        echo the_title();
+    } elseif (is_search()) {
+        echo "&nbsp;&nbsp;>&nbsp;&nbsp;Search Results for... ";
+        echo '"<em>';
+        echo the_search_query();
+        echo '</em>"';
+    } else {
+        echo "&nbsp;&nbsp;>&nbsp;&nbsp; All Content";
+    }
+}
