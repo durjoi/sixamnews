@@ -204,3 +204,22 @@ function pe_fontawesome(){
     wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); 
  }
  add_action('wp_enqueue_scripts','pe_fontawesome');
+
+
+
+ //estimated reading time
+function reading_time($post_id) {
+    $content = get_post_field( 'post_content', $post_id );
+    $word_count = str_word_count( strip_tags( $content ) );
+    $readingtime = ceil($word_count / 200);
+    
+    if ($readingtime == 1) {
+        $timer = " minute";
+    } else {
+        $timer = " minutes";
+    }
+
+    $totalreadingtime = $readingtime . $timer;
+    return $totalreadingtime;
+}
+    

@@ -16,7 +16,7 @@ if(have_posts()):
                         <p class="mt-2"><?php the_category(', '); ?></p>
                         
 
-                        <p class="mt-2 text-muted author-info"><?php the_author(); ?> / <?php echo get_the_date('F j, Y'); ?></p>
+                        <p class="mt-2 text-muted author-info"><?php the_author(); ?> / <?php echo reading_time(get_the_id()); ?></p>
                     
                 </div>
                 

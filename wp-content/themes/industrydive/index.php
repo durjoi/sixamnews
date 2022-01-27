@@ -24,7 +24,7 @@
                                 <h3 class="featured_banner_content_title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
                                 <p class="mb-3"><?php the_category(', '); ?></p>
                                 <p><?php the_excerpt();?></p>
-                                <p class="mt-3"><?php the_author(); ?> / <?php echo get_the_date('F j, Y'); ?></p>
+                                <p class="mt-3"><?php the_author(); ?> / <?php echo reading_time(get_the_id()); ?></p>
 
                             </div>
                         <?php 
@@ -48,7 +48,7 @@
                             <div class="featured_banner_sidebar_item" data="<?php the_id() ?>">
                                 <p><?php the_category(', '); ?></p>
                                 <h3><?php the_title(); ?></h3>
-                                <p><?php the_author(); ?> / <?php echo get_the_date('F j, Y'); ?></p>
+                                <p><?php the_author(); ?> / <?php echo reading_time(get_the_id()); ?></p>
 
                             </div>
                         <?php 
@@ -91,7 +91,9 @@
                                         <h3 class="latest_article_item_title">
                                             <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                                         </h3>
-                                        <span class="mt-2 text-muted author-info"><?php the_author(); ?> / <?php echo get_the_date('F j, Y'); ?></span>
+                                        <span class="mt-2 text-muted author-info"><?php the_author(); ?> / <?php echo reading_time(get_the_id()) ?> </span>
+
+                                        <?php //echo get_the_date('F j, Y'); ?>
                                         <?php the_excerpt('more'); ?>
                                     </div>
                                     
@@ -153,7 +155,7 @@
                                             <h3 class="latest_article_item_title">
                                                 <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                                             </h3>
-                                            <span class="mt-2 text-muted author-info"><?php the_author(); ?> / <?php echo get_the_date('F j, Y'); ?></span>
+                                            <span class="mt-2 text-muted author-info"><?php the_author(); ?> / <?php echo reading_time(get_the_id()); ?></span>
                                         </div>
                                     </div>
                                 </div>
