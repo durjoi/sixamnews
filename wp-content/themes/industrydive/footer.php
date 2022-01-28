@@ -14,12 +14,15 @@
                             </div>
                         </div>
                         <div class="col-md-6 d-flex flex-column justify-content-between align-items-end h-100">
-                            <div class="footer_newsletter">
-                                <p>Subscribe to our newsletter</p>
-                                <div class="input-box">
-                                    <input type="text" placeholder="Enter your email"> <button><i class="fa fa-envelope"></i></button>
+                            <form class="w-100" action="#" onSubmit="footerSignup(event)" >
+                                <div class="footer_newsletter newsletter">
+                                    <p>Subscribe to our newsletter</p>
+                                    <div class="input-box">
+                                        <input type="hidden" name="industrydive_submit_subscription" value="Submit">
+                                        <input type="email" class="subscriber-email-footer" name="subscriber-email" placeholder="Enter your email"> <button type="submit"><i class="fa fa-envelope"></i></button>
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
 
                             <div class="footer_social_menu">
                                 <a href="www.facebook.com">

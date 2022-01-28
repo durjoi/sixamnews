@@ -496,6 +496,13 @@ Latest Article Section CSS
     height: 30px;
 }
 
+.success-newsletter-msg {
+    font-size: 14px!important;
+    margin-top: 10px;
+    color: gray!important;
+    font-weight: normal!important;
+}
+
 .select-box {
     width: 200px;
     height: 40px;

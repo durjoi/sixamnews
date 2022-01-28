@@ -251,3 +251,49 @@ function get_breadcrumb() {
         echo "&nbsp;&nbsp;>&nbsp;&nbsp; All Content";
     }
 }
+
+// Email Subscription functionalities
+
+function industrydive_email_subscription_fn() {
+
+    if('POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['industrydive_submit_subscription'])) {
+
+        if( filter_var($_POST['subscriber_email'], FILTER_VALIDATE_EMAIL) ){
+            
+             $blogname = wp_specialchars_decode(get_option('blogname'), ENT_QUOTES);
+             
+             $subject = 'New Subscription on 6 AM News';
+             
+             $to = get_option('admin_email'); 
+             
+             $headers = 'From: wordpress@sixamnews.durjoi.com'. PHP_EOL;
+             
+            $message  = "Hi" . PHP_EOL . PHP_EOL;
+            $message .= 'You have a new subscription on your 6 AM News website.' . PHP_EOL . PHP_EOL;
+            $message .= 'Email Details' . PHP_EOL;
+            $message .= '-----------------'. PHP_EOL;
+            $message .= __('User E-mail: ', 'industrydive') . stripslashes($_POST['subscriber_email']) . PHP_EOL;
+            $message .= __('Regards,', 'industrydive') . PHP_EOL . PHP_EOL;
+            $message .= sprintf(__('Your %s Team', 'industrydive'), $blogname) . PHP_EOL;
+            $message .= trailingslashit(get_option('home')) . PHP_EOL . PHP_EOL . PHP_EOL . PHP_EOL;
+            
+            wp_mail($to, $subject, $message, $headers);
+
+            echo 'Your e-mail (' . $_POST['subscriber_email'] . ') has been added to our mailing list!';
+            die();
+
+            // if (wp_mail($to, $subject, $message, $headers)){
+            //     echo 'Your e-mail (' . $_POST['subscriber_email'] . ') has been added to our mailing list!';
+            // }	else	{
+            //    echo 'There was a problem with your e-mail (' . $_POST['subscriber_email'] . ')';   
+            // }
+        }else{
+           echo 'There was a problem with your e-mail (' . $_POST['subscriber_email'] . ')';   
+        }
+    }
+}
+
+// add_action('industrydive_email_subscription' , 'industrydive_email_subscription_fn' );
+
+add_action('wp_ajax_industrydive_email_subscription_fn', 'industrydive_email_subscription_fn');
+add_action('wp_ajax_nopriv_industrydive_email_subscription_fn', 'industrydive_email_subscription_fn');

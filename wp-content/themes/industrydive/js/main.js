@@ -146,6 +146,48 @@ for(let i = 0; i < elements.length; i++) {
         },
         allowPageScroll: "vertical" 
     });
+
+
+    // Submit Newsletter form 
+    
     
 })(jQuery );
+
+function submitNewsletter(e) {
+  e.preventDefault();
+  let data = document.querySelector('.subscriber-email').value;
+  postNewsletter(data);
+}
+
+function footerSignup(e) {
+  e.preventDefault();
+  let data = document.querySelector('.subscriber-email-footer').value;
+  console.log(data);
+  postNewsletter(data);
+
+}
+
+function postNewsletter(data) {
+  if(!jQuery('.success-newsletter-msg').length && data) {
+    jQuery.ajax({
+      type: 'POST',
+      url: '/wp-admin/admin-ajax.php',
+      dataType: 'html',
+      data: {
+        action: 'industrydive_email_subscription_fn',
+        industrydive_submit_subscription: true,
+        subscriber_email: data,
+      },
+      success: function(res) {
+        let responseText = document.createElement('p');
+        responseText.classList.add('success-newsletter-msg');
+        
+        responseText.innerText = res;
+        jQuery('.newsletter').append(responseText);
+      }
+    })
+  }
+  
+}
+
 

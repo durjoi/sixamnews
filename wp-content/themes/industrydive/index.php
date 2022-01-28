@@ -176,13 +176,21 @@
                     
                     </div>
                     <div class="col-md-6 d-flex align-items-center justify-content-start ps-5">
-                        <div class="email-newsletter">
+                    <form class="w-100" action="#" onSubmit="submitNewsletter(event)">
+                        <div class="email-newsletter newsletter">
                                 <p>Subscribe to our newsletter for <br/> the latest update</p>
+                                
                                 <div class="input-box">
-                                    <input type="text" placeholder="Enter your email"> <button><i class="fa fa-envelope"></i></button>
+                                    
+                                        <input type="hidden" name="industrydive_submit_subscription" value="Submit">
+                                        <input type="email" class="subscriber-email" name="subscriber-email" placeholder="Enter your email"> <button type="submit"><i class="fa fa-envelope"></i></button>
+                                    
+                                    
                                 </div>
                                 
+                                
                         </div>
+                    </form>
                     </div>
                 </div>
             </div>
