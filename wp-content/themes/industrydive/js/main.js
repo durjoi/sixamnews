@@ -122,6 +122,30 @@ for(let i = 0; i < elements.length; i++) {
       } else {
         $(multipleCardCarousel).addClass("slide");
       }
+
+      $("#carouselExampleControls").swipe({
+        swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+            if (direction == 'left') {
+              if (scrollPosition < carouselWidth - cardWidth * 2) {
+                scrollPosition += cardWidth;
+                $("#carouselExampleControls .carousel-inner").animate(
+                  { scrollLeft: scrollPosition },
+                  600
+                );
+              }
+            }
+            if (direction == 'right') {
+              if (scrollPosition > 0) {
+                scrollPosition -= cardWidth;
+                $("#carouselExampleControls .carousel-inner").animate(
+                  { scrollLeft: scrollPosition },
+                  600
+                );
+              }
+            }
+        },
+        allowPageScroll: "vertical" 
+    });
     
 })(jQuery );
 
