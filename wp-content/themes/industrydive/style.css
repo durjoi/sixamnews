@@ -351,7 +351,8 @@ Latest Article Section CSS
     box-sizing: border-box;
     height: 250px;
     margin-top: 20px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .latest_article_item:nth-child(4n) {
@@ -506,15 +507,19 @@ Latest Article Section CSS
 .select-box {
     width: 200px;
     height: 40px;
-    padding: 5px;
+    /* padding: 5px; */
     border: 1px solid #0000c5;
     text-align: center;
+    position: relative;
 }
 
 .select-box label {
     color: #0000c5;
     width: 40%;
     line-height: 30px;
+    position: absolute;
+    left: 0;
+    top: 5px;
 }
 
 .select-box select {
@@ -522,8 +527,15 @@ Latest Article Section CSS
     color: #0000c5;
     padding: 0;
     margin: 0;
-    width: 60%;
+    width: 100%;
     background: transparent;
+    position: absolute;
+    left: 0;
+    /* top: 10px; */
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding-left: 80px;
 }
 
 .select-box select:focus-visible {

@@ -201,8 +201,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <?php $categories = get_categories(); ?>
-                        <div class="select-box d-flex">
-                            <label for=""><i class="fa fa-filter"></i> Filter - </label>
+                        <div class="select-box">
+                            <label for="category_filter"><i class="fa fa-filter"></i> Filter - </label>
                             <select name="category" id="category_filter">
                                 <option value="all">All</option>
                                 <?php foreach($categories as $category) : ?>
