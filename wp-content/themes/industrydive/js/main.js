@@ -79,13 +79,13 @@ for(let i = 0; i < elements.length; i++) {
         return false;
     }
 
-    load_posts(7);
+    load_posts(9);
 
     
     
     $("#more_posts").on("click",function(){ // When btn is pressed.
         $("#more_posts").attr("disabled",true); // Disable the button, temp.
-        load_posts(7);
+        load_posts(9);
     });
 
     

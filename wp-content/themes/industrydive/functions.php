@@ -126,7 +126,7 @@ function filter_projects() {
   
     if($catSlug != "all") {
         $ajaxposts = new WP_Query([
-            'posts_per_page' => 7,
+            'posts_per_page' => 9,
             'post_type' => 'post',
             'category_name' => $catSlug,
             'orderby' => 'menu_order', 
@@ -134,7 +134,7 @@ function filter_projects() {
           ]);
     } else {
         $ajaxposts = new WP_Query([
-            'posts_per_page' => 7,
+            'posts_per_page' => 9,
             'post_type' => 'post',
             'orderby' => 'date', 
             'order' => 'desc',
@@ -162,7 +162,7 @@ function filter_projects() {
 
 function more_post_ajax(){
 
-    $ppp = (isset($_POST["ppp"])) ? $_POST["ppp"] : 4;
+    $ppp = (isset($_POST["ppp"])) ? $_POST["ppp"] : 9;
     $page = (isset($_POST['pageNumber'])) ? $_POST['pageNumber'] : 0;
     $category = $_POST['cat'];
 
@@ -297,3 +297,8 @@ function industrydive_email_subscription_fn() {
 
 add_action('wp_ajax_industrydive_email_subscription_fn', 'industrydive_email_subscription_fn');
 add_action('wp_ajax_nopriv_industrydive_email_subscription_fn', 'industrydive_email_subscription_fn');
+
+function wpdocs_excerpt_more( $more ) {
+    return '...';
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
