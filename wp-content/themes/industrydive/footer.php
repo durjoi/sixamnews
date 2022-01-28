@@ -14,7 +14,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 d-flex flex-column justify-content-between align-items-end h-100">
-                            <form class="w-100" action="#" onSubmit="footerSignup(event)" >
+                            <form class="w-100 d-flex justify-content-end" action="#" onSubmit="footerSignup(event)" >
                                 <div class="footer_newsletter newsletter">
                                     <p>Subscribe to our newsletter</p>
                                     <div class="input-box">
