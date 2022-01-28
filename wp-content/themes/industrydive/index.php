@@ -133,10 +133,10 @@
                                     <div class="section_underline"></div>
                                 </div>
                                 <div>
-                                    <button class="carousel-control-left" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <button class="carousel-control-left" type="button" data-bs-target="#carouselExampleControls" >
                                     <i class="fa fa-arrow-left"></i>
                                     </button>
-                                    <button class="carousel-control-right" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <button class="carousel-control-right" type="button" data-bs-target="#carouselExampleControls" >
                                     <i class="fa fa-arrow-right"></i>
                                     </button>
                                 </div>

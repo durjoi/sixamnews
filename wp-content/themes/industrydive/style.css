@@ -399,9 +399,15 @@ Latest Article Section CSS
     flex: 0 0 49%;
     display: block;
     margin-right: 10px;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
   }
   .carousel-inner {
     display: flex;
+  }
+
+  .carousel-inner:after {
+      display: none!important;
   }
 
 .carousel-item h3 a {

@@ -96,7 +96,7 @@ for(let i = 0; i < elements.length; i++) {
       );
       if (window.matchMedia("(min-width: 500px)").matches) {
         var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-          interval: false,
+          interval: 0,
         });
         var carouselWidth = $(".carousel-inner")[0].scrollWidth;
         var cardWidth = $(".carousel-item").width();
