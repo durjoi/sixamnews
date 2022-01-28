@@ -190,6 +190,10 @@ Featured Section CSS
     text-decoration: none;
 }
 
+.slick-slider {
+    width: 100%!important;
+}
+
 .featured_banner_sidebar_item {
     color: rgb(205, 205, 205);
     font-size: 16px;

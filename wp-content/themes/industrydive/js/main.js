@@ -1,36 +1,36 @@
 
 
 
-let elements = document.getElementsByClassName('featured_banner_sidebar_item');
+// let elements = document.getElementsByClassName('featured_banner_sidebar_item');
 
-const myFunction = function() {
-    data = this.getAttribute('data');
+// const myFunction = function() {
+//     data = this.getAttribute('data');
 
-    let siblings = document.querySelectorAll('.featured_banner_sidebar_item');
+//     let siblings = document.querySelectorAll('.featured_banner_sidebar_item');
 
-    siblings.forEach(function(e) {
-        e.classList.remove('feature_sidebar_active');
-    })
-    this.classList.add('feature_sidebar_active');
+//     siblings.forEach(function(e) {
+//         e.classList.remove('feature_sidebar_active');
+//     })
+//     this.classList.add('feature_sidebar_active');
 
-    let item = document.getElementById('featured_banner_item-'+data);
-    let children = document.querySelectorAll('.featured_banner_content');
+//     let item = document.getElementById('featured_banner_item-'+data);
+//     let children = document.querySelectorAll('.featured_banner_content');
     
-    children.forEach(function(e) {
-        e.classList.remove('show');
-    });
-    item.classList.add('show');
-};
+//     children.forEach(function(e) {
+//         e.classList.remove('show');
+//     });
+//     item.classList.add('show');
+// };
 
-document.querySelector('.featured_banner_content').classList.add('show');
-document.querySelector('.featured_banner_sidebar_item').classList.add('feature_sidebar_active');
+// document.querySelector('.featured_banner_content').classList.add('show');
+// document.querySelector('.featured_banner_sidebar_item').classList.add('feature_sidebar_active');
 
-// Add carousel first item active
-document.querySelector('.carousel-item').classList.add('active');
+// // Add carousel first item active
+// document.querySelector('.carousel-item').classList.add('active');
 
-for(let i = 0; i < elements.length; i++) {
-    elements[i].addEventListener("click", myFunction);
-}
+// for(let i = 0; i < elements.length; i++) {
+//     elements[i].addEventListener("click", myFunction);
+// }
 
 // Filter products based on categories
 (function($) {
@@ -149,6 +149,60 @@ for(let i = 0; i < elements.length; i++) {
 
 
     // Submit Newsletter form 
+
+
+      $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        vertical:true,
+        prevArrow: false,
+        nextArrow: false,
+        asNavFor: '.slider-for',
+        dots: false,
+        // focusOnSelect: false,
+        verticalSwiping:true,
+        responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+              vertical: false,
+            }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            vertical: false,
+          }
+        },
+        {
+          breakpoint: 580,
+          settings: {
+            vertical: false,
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 380,
+          settings: {
+            vertical: false,
+            slidesToShow: 2,
+          }
+        }
+        ]
+      });
+
+      $('.slider-nav').on("click", ".featured_banner_sidebar_item", function() {
+        var slideNo = $(this).attr("data");
+        console.log(slideNo);
+        $('.slider-for').slick("slickGoTo", slideNo);
+      })
     
     
 })(jQuery );

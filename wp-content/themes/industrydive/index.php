@@ -15,55 +15,95 @@
         
             <div class="container h-100">
                 <div class="row h-100">
-                    <div class="col-md-8 h-100 d-flex flex-column justify-content-center">
+                    <div class="col-md-8 h-100 d-flex flex-column justify-content-center pe-5">
                         <h2 class="featured_title">Featured</h2>
-                    <?php
-                            $args = array(
-                                    'posts_per_page' => 3,
-                                    'meta_key' => 'meta-checkbox',
-                                    'meta_value' => 'yes'
-                                );
-                                $featured = new WP_Query($args);
-                            
-                            if ($featured->have_posts()): 
-                                while($featured->have_posts()): 
-                                    $featured->the_post(); 
-                        ?>
-                            <div class="hide featured_banner_content" id="featured_banner_item-<?php the_id() ?>">
-                                <h3 class="featured_banner_content_title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-                                <p class="mb-3"><?php the_category(', '); ?></p>
-                                <p><?php the_excerpt();?></p>
-                                <p class="mt-3"><?php the_author(); ?> / <?php echo reading_time(get_the_id()); ?></p>
+                        <div class="slider-for slider">
+                            <?php
+                                $args = array(
+                                        'posts_per_page' => 10,
+                                        'meta_key' => 'meta-checkbox',
+                                        'meta_value' => 'yes'
+                                    );
+                                    $featured = new WP_Query($args);
+                                
+                                if ($featured->have_posts()): 
+                                    while($featured->have_posts()): 
+                                        $featured->the_post(); 
+                            ?>
+                                <div class="featured_banner_content">
+                                    <h3 class="featured_banner_content_title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+                                    <p class="mb-3"><?php the_category(', '); ?></p>
+                                    <p><?php the_excerpt();?></p>
+                                    <p class="mt-3"><?php the_author(); ?> / <?php echo reading_time(get_the_id()); ?></p>
 
-                            </div>
-                        <?php 
-                                endwhile; 
-                            endif;
-                        ?>
+                                </div>
+                            <?php 
+                                    endwhile; 
+                                endif;
+                            ?>
+                        </div>
                     </div>
-                    <div class="col-md-4 h-100 d-flex flex-column justify-content-center align-items-end">
+                    <div class="col-md-4 h-100 d-flex justify-content-center align-items-center">
+                        <div class="slider slider-nav">
                         <?php
                             $args = array(
-                                    'posts_per_page' => 3,
+                                    'posts_per_page' => 10,
                                     'meta_key' => 'meta-checkbox',
-                                    'meta_value' => 'yes'
+                                    'meta_value' => 'yes',
+                                    'offset' => 1,
                                 );
                                 $featured = new WP_Query($args);
                             
                             if ($featured->have_posts()): 
+                                $i = 1;
                                 while($featured->have_posts()): 
+                                    // if($i == $featured->found_posts) {
+                                    //     $i = 1;
+                                    // }
                                     $featured->the_post(); 
+                                    
                         ?>
-                            <div class="featured_banner_sidebar_item" data="<?php the_id() ?>">
+                            <div class="featured_banner_sidebar_item" data="<?php echo $i ?>">
                                 <p><?php the_category(', '); ?></p>
                                 <h3><?php the_title(); ?></h3>
                                 <p><?php the_author(); ?> / <?php echo reading_time(get_the_id()); ?></p>
 
                             </div>
                         <?php 
+                                $i++;
                                 endwhile; 
                             endif;
                         ?>
+
+<?php
+                            $args = array(
+                                    'posts_per_page' => 1,
+                                    'meta_key' => 'meta-checkbox',
+                                    'meta_value' => 'yes',
+                                );
+                                $featured = new WP_Query($args);
+                            
+                            if ($featured->have_posts()): 
+                                while($featured->have_posts()): 
+                                    // if($i == $featured->found_posts) {
+                                    //     $i = 1;
+                                    // }
+                                    $featured->the_post(); 
+                                    
+                        ?>
+                            <div class="featured_banner_sidebar_item" data="<?php echo $i ?>">
+                                <p><?php the_category(', '); ?></p>
+                                <h3><?php the_title(); ?></h3>
+                                <p><?php the_author(); ?> / <?php echo reading_time(get_the_id()); ?></p>
+
+                            </div>
+                        <?php 
+                                $i++;
+                                endwhile; 
+                            endif;
+                        ?>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
