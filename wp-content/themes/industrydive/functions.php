@@ -302,3 +302,19 @@ function wpdocs_excerpt_more( $more ) {
     return '...';
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+
+// Show Search Form 
+add_filter( 'wp_nav_menu_items','add_search_box', 10, 2 );
+function add_search_box( $items, $args ) {
+    $items .= '<li>' . get_search_form( false  ) . '</li>';
+    return $items;
+}
+
+function SearchFilter($query) {
+    if ($query->is_search) {
+        $query->set('post_type', 'post');
+    }
+    return $query;
+}
+add_filter('pre_get_posts', 'SearchFilter');
