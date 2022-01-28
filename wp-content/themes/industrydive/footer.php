@@ -2,7 +2,7 @@
 
 				<div class="container h-100">
                     <div class="row h-100">
-                        <div class="col-md-6 d-flex flex-column justify-content-between h-100">
+                        <div class="col-md-6 col-12 d-flex flex-column justify-content-between h-100">
                             <div class="site-footer_menu">
                             <?php wp_nav_menu(['theme_location' => 'main_menu', 'menu_id' => 'footer_nav']); ?>
 
@@ -13,7 +13,7 @@
                                 <p>Copywrite @ All Right Reserved</p>
                             </div>
                         </div>
-                        <div class="col-md-6 d-flex flex-column justify-content-between align-items-end h-100">
+                        <div class="col-md-6 col-12 d-flex flex-column justify-content-between align-items-end h-100">
                             <form class="w-100 d-flex justify-content-end" action="#" onSubmit="footerSignup(event)" >
                                 <div class="footer_newsletter newsletter">
                                     <p>Subscribe to our newsletter</p>

@@ -37,8 +37,8 @@ img {
     width: 200px;
     padding: 5px;
     background: transparent;
-    border: 2px solid #0000c5;
-    color: #0000c5;
+    border: 2px solid #1F4493;
+    color: #1F4493;
     font-size: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -62,7 +62,7 @@ Reused CSS
 .section-title {
     font-size: 20px;
     font-weight: normal;
-    color: #0000c5;
+    color: #1F4493;
     padding: 0px;
     margin-bottom: 10px;
 }
@@ -74,7 +74,7 @@ Reused CSS
 .section_underline {
     width: 30px;
     height: 3px;
-    background: #008d00;
+    background: #6BA75E;
     margin-bottom: 20px;
 }
 /*================================================
@@ -101,13 +101,23 @@ Header CSS
     align-items: center;
 }
 
+.toggle-menu {
+    display: none!important;
+}
+.toggle-menu button {
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 #main_nav>li {
     padding-left: 30px;
 }
 
 #main_nav>li>a {
     text-decoration: none;
-    color: #0000c5;
+    color: #1F4493;
     font-size: 16px;
     font-weight: normal;
 }
@@ -167,7 +177,7 @@ Featured Section CSS
 }
 
 .featured_title {
-    color: #008d00;
+    color: #6BA75E;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -198,7 +208,7 @@ Featured Section CSS
     color: rgb(205, 205, 205);
     font-size: 16px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #008d00;
+    border-bottom: 1px solid #6BA75E;
     padding-bottom: 10px;
     cursor: pointer;
     width: 80%;
@@ -277,7 +287,7 @@ Latest Article Section CSS
 
 .latest_article_item:first-child .content a {
     font-size: 14px;
-    color: #008d00;
+    color: #6BA75E;
     text-decoration: none;
 }
 
@@ -345,7 +355,7 @@ Latest Article Section CSS
 .latest_article_item:nth-child(2)>.content>a, 
 .latest_article_item:nth-child(3)>.content>a {
     font-size: 14px;
-    color: #008d00;
+    color: #6BA75E;
     text-decoration: none;
 }
 
@@ -388,7 +398,7 @@ Latest Article Section CSS
 .latest_article_item:nth-child(4) .content a, 
 .latest_article_item:nth-child(5) .content a {
     font-size: 14px;
-    color: #008d00;
+    color: #6BA75E;
     text-decoration: none;
 }
 
@@ -432,7 +442,7 @@ Latest Article Section CSS
 
 .latest_article_item:not(:first-child):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(5)) .content>a {
     font-size: 14px;
-    color: #008d00;
+    color: #6BA75E;
     text-decoration: none;
     display: block;
     margin-bottom: 5px;
@@ -513,7 +523,7 @@ Latest Article Section CSS
 
 .carousel-item .card .card-body>a {
     font-size: 14px;
-    color: #008d00;
+    color: #6BA75E;
     text-decoration: none;
     display: block;
     margin-bottom: 5px;
@@ -525,7 +535,7 @@ Latest Article Section CSS
 }
 
 .email-newsletter p {
-    color: #0000c5;
+    color: #1F4493;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -535,9 +545,9 @@ Latest Article Section CSS
     padding-left: 20px;
     width: 100%;
     height: 100%;
-    border-bottom: 1px solid #0000c5;
-    border-left: 1px solid #0000c5;
-    border-right: 1px solid #0000c5;
+    border-bottom: 1px solid #1F4493;
+    border-left: 1px solid #1F4493;
+    border-right: 1px solid #1F4493;
     border-top: transparent;
 }
 
@@ -555,7 +565,7 @@ Latest Article Section CSS
     border: none;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
-    background: #0000c5;
+    background: #1F4493;
     color: #fff;
     position: absolute;
     right: -10px;
@@ -573,13 +583,13 @@ Latest Article Section CSS
     width: 200px;
     height: 40px;
     /* padding: 5px; */
-    border: 1px solid #0000c5;
+    border: 1px solid #1F4493;
     text-align: center;
     position: relative;
 }
 
 .select-box label {
-    color: #0000c5;
+    color: #1F4493;
     width: 40%;
     line-height: 30px;
     position: absolute;
@@ -589,7 +599,7 @@ Latest Article Section CSS
 
 .select-box select {
     border: none;
-    color: #0000c5;
+    color: #1F4493;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -683,7 +693,7 @@ Latest Article Section CSS
     border: none;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
-    background: #0000c5;
+    background: #1F4493;
     color: #fff;
     position: absolute;
     right: -10px;
@@ -771,7 +781,7 @@ Latest Article Section CSS
 .post-info a {
     display: inline-block;
     text-decoration: none;
-    color: #008d00;
+    color: #6BA75E;
 }
 
 .author-info {
@@ -787,4 +797,139 @@ Latest Article Section CSS
 
 .category_page {
     min-height: 100vh;
+}
+
+.search-button {
+    color: #1F4493;
+    cursor: pointer;
+}
+.search-box {
+    display: none;
+    position: absolute;
+    background: #fff;
+    right: 0px;
+    top: 30px;
+    width: 300px;
+    height: 30px;
+    padding: 0px;
+    border: 1px solid grey;
+
+}
+.search-box form {
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.search-box input:focus-visible {
+    outline: none;
+}
+
+.search-box button {
+    border: none;
+    background: #1F4493;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+}
+
+.nav-search {
+    position: relative;
+} 
+
+#footer_nav .nav-search {
+    display: none!important;
+}
+
+@media only screen and (max-width: 770px) {
+    .toggle-menu {
+        display: flex!important;
+    }   
+    .show-nav {
+        left: 0!important;
+        transition: 0.3s;
+    } 
+    .main_header {
+        height: 60px;
+        position: relative;
+        z-index: 999;
+        background: #fff;
+    }
+
+    .main_header img {
+        width: 70%;
+    }
+
+    .sticky-social-menu {
+        display: none;
+    }
+
+    #main_nav {
+        list-style: none;
+        display: block;
+        height: 190px;
+        position: absolute;
+        background: #fff;
+        z-index: 10;
+        top: 60px;
+        left: 100%;
+        border: 1px solid #000;
+        transition: 0.3s;
+
+    }
+
+    #main_nav>li {
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .search-button {
+        display: none;
+    } 
+    .search-box {
+        display: block!important;
+        position: relative;
+        top: 0;
+    }
+
+    .breadcrumb p {
+        font-size: 12px;
+    }
+
+    .slider-nav-wrapper {
+        display: none!important;
+    }
+
+    .featured_banner {
+        padding: 20px;
+    }
+
+    .featured_banner_content_title>a {
+        font-size: 16px!important;
+    }
+
+    .featured_banner_content_title {
+        line-height: 20px;
+        margin-bottom: 7px;
+    }
+
+    .featured_banner_content a {
+        font-size: 12px;
+    }
+    .featured_banner_content p {
+        font-size: 14px;
+    }
+    
 }

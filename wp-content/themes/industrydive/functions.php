@@ -279,7 +279,7 @@ function industrydive_email_subscription_fn() {
             
             wp_mail($to, $subject, $message, $headers);
 
-            echo 'Your e-mail (' . $_POST['subscriber_email'] . ') has been added to our mailing list!';
+            echo 'Your e-mail has been added to our mailing list!';
             die();
 
             // if (wp_mail($to, $subject, $message, $headers)){

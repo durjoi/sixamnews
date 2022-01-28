@@ -15,7 +15,7 @@
         
             <div class="container h-100">
                 <div class="row h-100">
-                    <div class="col-md-8 h-100 d-flex flex-column justify-content-center pe-5">
+                    <div class="col-md-8 col-12 h-100 d-flex flex-column justify-content-center pe-md-5">
                         <h2 class="featured_title">Featured</h2>
                         <div class="slider-for slider">
                             <?php
@@ -43,7 +43,7 @@
                             ?>
                         </div>
                     </div>
-                    <div class="col-md-4 h-100 d-flex justify-content-center align-items-center">
+                    <div class="slider-nav-wrapper col-md-4 h-100 d-flex justify-content-center align-items-center">
                         <div class="slider slider-nav">
                         <?php
                             $args = array(

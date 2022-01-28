@@ -29,12 +29,15 @@
 		<header class="main_header">
             <div class="container h-100">
                 <div class="row h-100">
-                    <div class="col-md-2 h-100 d-flex justify-content-center align-items-center">
+                    <div class="col-10 col-md-2 h-100 d-flex justify-content-md-center align-items-center">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                             <img src="<?php echo get_theme_mod('industrydive_logo') ?>" alt="">
                         </a>
                     </div>
-                    <div class="col-md-10 h-100">
+                    <div class="col-2 d-flex align-items-center justify-content-center toggle-menu">
+                        <button><i class="fa fa-bars"></i></button>
+                    </div>
+                    <div class="col-md-10 h-100 col-12">
                         <?php wp_nav_menu(['theme_location' => 'main_menu', 'menu_id' => 'main_nav']); ?>
                     </div>
                 </div>

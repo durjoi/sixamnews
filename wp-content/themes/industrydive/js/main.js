@@ -32,6 +32,10 @@
 //     elements[i].addEventListener("click", myFunction);
 // }
 
+document.querySelector('.search-button').addEventListener('click', function(){
+  document.querySelector('.search-box').classList.toggle('show');
+});
+
 // Filter products based on categories
 (function($) {
 	$('#category_filter').on('change', function() {
@@ -170,12 +174,6 @@
         verticalSwiping:true,
         responsive: [
         {
-            breakpoint: 992,
-            settings: {
-              vertical: false,
-            }
-        },
-        {
           breakpoint: 768,
           settings: {
             vertical: false,
@@ -245,3 +243,6 @@ function postNewsletter(data) {
 }
 
 
+document.querySelector('.toggle-menu').addEventListener('click', function() {
+  document.getElementById('main_nav').classList.toggle('show-nav');
+})
