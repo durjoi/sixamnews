@@ -883,7 +883,7 @@ Latest Article Section CSS
         background: #fff;
         z-index: 10;
         top: 60px;
-        left: 100%;
+        left: 105%;
         border: 1px solid #000;
         transition: 0.3s;
 
@@ -929,6 +929,79 @@ Latest Article Section CSS
         font-size: 12px;
     }
     .featured_banner_content p {
+        font-size: 14px;
+    }
+
+    .section-padding {
+        padding-left: 2%!important;
+        padding-right: 2%!important;
+    }
+
+    .latest_article {
+        height: 100%;
+    }
+
+    .latest_article_item:first-child {
+        width: 100%;
+        min-height: 250px;
+        display: block;
+        margin-right: 0px;
+        display: block;
+        margin-bottom: 60px;
+    }
+
+    .latest_article_item:first-child .content {
+        background: #fff;
+        padding: 20px;
+        width: 80%;
+        height: 80%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .latest_article_item:first-child .content p{
+        text-align: justify;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 6; /* number of lines to show */
+                line-clamp: 6; 
+        -webkit-box-orient: vertical;
+        
+    }
+
+    .latest_article_item:first-child .content span {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .latest_article_item:nth-child(2), .latest_article_item:nth-child(3) {
+        width: 100%;
+        display: block;
+        margin: 0px;
+        height: 220px;
+        margin-bottom: 20px;
+    }
+
+    .most_viewed {
+        display: block;
+    }
+
+    .carousel-item {
+        flex: 0 0 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .email-newsletter p {
+        font-size: 14px;
+    }
+
+    .email-newsletter input {
+        font-size: 12px;
+    }
+
+    .select-box {
+        width: 50%;
         font-size: 14px;
     }
     

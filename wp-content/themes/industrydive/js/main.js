@@ -98,7 +98,7 @@ document.querySelector('.search-button').addEventListener('click', function(){
     var multipleCardCarousel = document.querySelector(
         "#carouselExampleControls"
       );
-      if (window.matchMedia("(min-width: 500px)").matches) {
+      // if (window.matchMedia("(min-width: 500px)").matches) {
         var carousel = new bootstrap.Carousel(multipleCardCarousel, {
           interval: 0,
         });
@@ -123,9 +123,9 @@ document.querySelector('.search-button').addEventListener('click', function(){
             );
           }
         });
-      } else {
-        $(multipleCardCarousel).addClass("slide");
-      }
+      // } else {
+      //   $(multipleCardCarousel).addClass("slide");
+      // }
 
       $("#carouselExampleControls").swipe({
         swipe: function (event, direction, distance, duration, fingerCount, fingerData) {

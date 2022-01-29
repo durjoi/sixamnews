@@ -215,7 +215,7 @@
                         </div>
                     
                     </div>
-                    <div class="col-md-6 d-flex align-items-center justify-content-start ps-5">
+                    <div class="col-md-6 d-flex align-items-center justify-content-start ps-md-5">
                     <form class="w-100" action="#" onSubmit="submitNewsletter(event)">
                         <div class="email-newsletter newsletter">
                                 <p>Subscribe to our newsletter for <br/> the latest update</p>
@@ -237,7 +237,7 @@
         </section>
 
         <section class="section-padding filter-section">
-            <div class="container pb-5">
+            <div class="container pb-3 pb-md-5">
                 <div class="row">
                     <div class="col-md-12">
                         <?php $categories = get_categories(); ?>
