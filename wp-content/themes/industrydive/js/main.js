@@ -89,6 +89,33 @@ document.querySelector('.search-button').addEventListener('click', function(){
         return false;
     }
 
+    let categoryPageNumber = 1
+    function load_category_posts(ppp, cat){
+      categoryPageNumber++;
+      // 
+      var str ='&cat=' + cat +  '&pageNumber=' + categoryPageNumber + '&ppp=' + ppp + '&action=more_post_ajax';
+      $.ajax({
+          type: "POST",
+          dataType: "html",
+          url: ajax_posts.ajaxurl,
+          data: str,
+          success: function(data){
+              var $data = $(data);
+              if($data.length){
+                  $("#category_post").append($data);
+                  $("#category_load_more").attr("disabled",false);
+              } else{
+                  $("#category_load_more").attr("disabled",true);
+              }
+          },
+          error : function(jqXHR, textStatus, errorThrown) {
+              $loader.html(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+          }
+  
+      });
+      return false;
+  }
+
     
 
     
@@ -96,6 +123,13 @@ document.querySelector('.search-button').addEventListener('click', function(){
     $("#more_posts").on("click",function(){ // When btn is pressed.
         $("#more_posts").attr("disabled",true); // Disable the button, temp.
         load_posts(9);
+    });
+
+    $("#category_load_more").on("click",function(){ // When btn is pressed.
+        console.log('working');
+        $("#category_load_more").attr("disabled",true); // Disable the button, temp.
+        // load_posts(1);
+        load_category_posts(9, $(this).attr('data'));
     });
 
     

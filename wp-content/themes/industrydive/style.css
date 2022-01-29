@@ -37,7 +37,7 @@ img {
     width: 100%;
 }
 
-#more_posts {
+#more_posts, #category_load_more {
     width: 200px;
     padding: 5px;
     background: transparent;
@@ -50,7 +50,7 @@ img {
     transition: 0.3s;
 }
 
-#more_posts:hover {
+#more_posts:hover, #category_load_more:hover {
     background: #1F4493;
     color: #fff;
     transition: 0.3s;
@@ -1123,7 +1123,7 @@ Latest Article Section CSS
     padding: 20px;
     width: 100%;
     left: 0px;
-    
+    border: none;
 }
 
 .latest_article_item:nth-child(4)>.content>a, 
