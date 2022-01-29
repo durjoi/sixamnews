@@ -235,10 +235,10 @@ function get_breadcrumb() {
     if (is_category() || is_single()) {
         echo "&nbsp;&nbsp;>&nbsp;&nbsp;";
         the_category(' > ');
-            if (is_single()) {
-                echo " &nbsp;&nbsp;>&nbsp;&nbsp; ";
-                the_title();
-            }
+            // if (is_single()) {
+            //     echo " &nbsp;&nbsp;>&nbsp;&nbsp; ";
+            //     the_title();
+            // }
     } elseif (is_page()) {
         echo "&nbsp;&nbsp;>&nbsp;&nbsp;";
         echo the_title();

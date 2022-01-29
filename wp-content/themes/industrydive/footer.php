@@ -6,7 +6,7 @@
                             <div class="site-footer_menu">
                             <?php wp_nav_menu(['theme_location' => 'main_menu', 'menu_id' => 'footer_nav']); ?>
 
-                                <p>Contact Us <span> <i class="fa fa-phone"></i>  +88802394890</span></p>
+                                <p>Contact Us <a href="tel:+888012345678"> <i class="fa fa-phone"></i> +888012345678</a></p>
                             </div>
 
                             <div class="site-footer_copywrite">
@@ -25,18 +25,21 @@
                             </form>
 
                             <div class="footer_social_menu">
-                                <a href="www.facebook.com">
-                                    <i class="fa fa-facebook-f"></i>
-                                </a>
-                                <a href="www.google.com">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                                <a href="www.twitter.com">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a href="www.linkedin.com">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
+                            <a href="https://facebook.com" target="_blank">
+                                <i class="fa fa-facebook-f"></i>
+                            </a>
+
+                            <a href="https://twitter.com" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+
+                            <a href="https:/google.com" target="_blank">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            
+                            <a href="https://linkedin.com" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
                             </div>
 
                             <div class="site-footer_copywrite-mobile">

@@ -45,24 +45,24 @@
         </header>
 
         <div class="sticky-social-menu">
-            <a class="bg-facebook" href="www.facebook.com">
+            <a class="bg-facebook" href="https://facebook.com" target="_blank">
                 <i class="fa fa-facebook-f"></i>
             </a>
 
-            <a class="bg-twitter" href="www.twitter.com">
+            <a class="bg-twitter" href="https://twitter.com" target="_blank">
                 <i class="fa fa-twitter"></i>
             </a>
 
 
-            <a class="bg-google" href="www.google.com">
+            <a class="bg-google" href="https:/google.com" target="_blank">
                 <i class="fa fa-google-plus"></i>
             </a>
             
-            <a class="bg-linkedin" href="www.linkedin.com">
+            <a class="bg-linkedin" href="https://linkedin.com" target="_blank">
                 <i class="fa fa-linkedin"></i>
             </a>
 
-            <a class="bg-email" href="www.linkedin.com">
+            <a class="bg-email" href="mailto:info@sixamnews.durjoi.com" target="_blank">
             <i class="fa fa-envelope"></i>
             </a>
         </div>
