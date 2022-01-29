@@ -454,7 +454,7 @@ Latest Article Section CSS
     font-size: 14px;
     color: rgb(72, 72, 72);
     font-weight: normal;
-    height: 100px;
+    height: 120px;
 }
 
 .latest_article_item:nth-child(4) .content h3 a, 

@@ -41,13 +41,13 @@ $posts = new WP_Query([
                 </div>
             </div>
 
-            <div class="container">
+            <!-- <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <button id="category_load_more" data="<?php echo $cat_name?>"><i class="fa fa-th me-2"></i> Load More</button>
+                        <button id="category_load_more" data="<?php //echo $cat_name?>"><i class="fa fa-th me-2"></i> Load More</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
         
         

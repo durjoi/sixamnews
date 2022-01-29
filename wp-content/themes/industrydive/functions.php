@@ -213,9 +213,9 @@ function reading_time($post_id) {
     $readingtime = ceil($word_count / 200);
     
     if ($readingtime == 1) {
-        $timer = " minute. Read";
+        $timer = " Minute Read";
     } else {
-        $timer = " minutes. Read";
+        $timer = " Minutes Read";
     }
 
     $totalreadingtime = $readingtime . $timer;
