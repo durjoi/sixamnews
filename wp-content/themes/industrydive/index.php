@@ -260,7 +260,20 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div id="ajax-posts" class="latest_article_layout">
-                            
+                            <?php 
+                                $posts = new WP_Query([
+                                    'posts_per_page' => 9,
+                                    'post_type' => 'post',
+                                    'orderby' => 'date', 
+                                    'order' => 'desc',
+                                  ]);
+
+                                  if($posts->have_posts()) {
+                                    while($posts->have_posts()) : $posts->the_post();
+                                      get_template_part('template_part/post_item');
+                                    endwhile;
+                                  }
+                            ?>
                         </div>
                     </div>
                 </div>

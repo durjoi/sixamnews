@@ -83,7 +83,7 @@ document.querySelector('.search-button').addEventListener('click', function(){
         return false;
     }
 
-    load_posts(9);
+    
 
     
     

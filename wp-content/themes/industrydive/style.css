@@ -18,6 +18,9 @@ Theme URI: #
 	0. 	CSS Reset
 
 ----------------------------------------------------------------------------- */
+html {
+    
+}
 html,
 body,
 p,
@@ -26,7 +29,8 @@ h2,
 h3 {
 	border: none;
 	margin: 0;
-	padding: 0
+	padding: 0;
+    overflow-x: hidden;
 }
 
 img {
