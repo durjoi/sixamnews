@@ -223,11 +223,11 @@ function reading_time($post_id) {
 }
     
 
-add_filter( 'allowed_http_origins', 'add_allowed_origins' );
-function add_allowed_origins( $origins ) {
-    $origins[] = 'https://127.0.0.1:9210';
-    return $origins;
-}
+// add_filter( 'allowed_http_origins', 'add_allowed_origins' );
+// function add_allowed_origins( $origins ) {
+//     $origins[] = 'https://127.0.0.1:9210';
+//     return $origins;
+// }
 
 // Breadcrumbs 
 function get_breadcrumb() {

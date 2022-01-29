@@ -32,9 +32,15 @@
 //     elements[i].addEventListener("click", myFunction);
 // }
 
+document.querySelector('.toggle-menu').addEventListener('click', function() {
+  document.getElementById('main_nav').classList.toggle('show-nav');
+})
+
 document.querySelector('.search-button').addEventListener('click', function(){
   document.querySelector('.search-box').classList.toggle('show');
 });
+
+
 
 // Filter products based on categories
 (function($) {
@@ -54,7 +60,7 @@ document.querySelector('.search-button').addEventListener('click', function(){
       });
 
 
-      var pageNumber = 0;
+      var pageNumber = 1;
 
       function load_posts(ppp){
         pageNumber++;
@@ -98,7 +104,7 @@ document.querySelector('.search-button').addEventListener('click', function(){
     var multipleCardCarousel = document.querySelector(
         "#carouselExampleControls"
       );
-      // if (window.matchMedia("(min-width: 500px)").matches) {
+      if (multipleCardCarousel) {
         var carousel = new bootstrap.Carousel(multipleCardCarousel, {
           interval: 0,
         });
@@ -123,6 +129,7 @@ document.querySelector('.search-button').addEventListener('click', function(){
             );
           }
         });
+      }
       // } else {
       //   $(multipleCardCarousel).addClass("slide");
       // }
@@ -156,6 +163,9 @@ document.querySelector('.search-button').addEventListener('click', function(){
 
 
       $('.slider-for').slick({
+        autoplay: true,
+        autoplaySpeed: 1000,
+        speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
@@ -243,6 +253,3 @@ function postNewsletter(data) {
 }
 
 
-document.querySelector('.toggle-menu').addEventListener('click', function() {
-  document.getElementById('main_nav').classList.toggle('show-nav');
-})
