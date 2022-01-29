@@ -852,6 +852,10 @@ Latest Article Section CSS
     display: none!important;
 }
 
+.site-footer_copywrite-mobile {
+    display: none;
+}
+
 @media only screen and (max-width: 770px) {
     .toggle-menu {
         display: flex!important;
@@ -963,9 +967,10 @@ Latest Article Section CSS
         text-overflow: ellipsis;
         overflow: hidden;
         display: -webkit-box;
-        -webkit-line-clamp: 6; /* number of lines to show */
-                line-clamp: 6; 
+        -webkit-line-clamp: 7; /* number of lines to show */
+                line-clamp: 7; 
         -webkit-box-orient: vertical;
+        font-size: 12px;
         
     }
 
@@ -1004,5 +1009,81 @@ Latest Article Section CSS
         width: 50%;
         font-size: 14px;
     }
+
+    .latest_article_item:nth-child(4), .latest_article_item:nth-child(5) {
+        width: 100%!important;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .latest_article_item:nth-child(4) .content p, .latest_article_item:nth-child(5) .content p {
+        font-size: 12px;
+        text-align: justify;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 6; /* number of lines to show */
+                line-clamp: 6; 
+        -webkit-box-orient: vertical;
+    }
+
+    .latest_article_item:not(:first-child):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(5)) {
+        width: 100%;
+        float: left;
+        box-sizing: border-box;
+        height: 250px;
+        margin-top: 0; 
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #footer_nav {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #footer_nav>li {
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .site-footer_copywrite {
+        display: none;
+    }
+
+    .site-footer_menu {
+        text-align: center;
+    }
     
+    #site-footer {
+        height: 100%;
+    }
+
+    .site-footer_menu p {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .footer_newsletter {
+        width: 80%;
+        text-align: center;
+    }
+
+    .footer_newsletter input {
+        padding-left: 20px;
+    }
+
+    .footer_social_menu {
+        margin-top: 10px;
+    }
+
+    .site-footer_copywrite-mobile {
+        display: block;
+        margin-top: 10px;
+    }
 }

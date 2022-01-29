@@ -13,8 +13,8 @@
                                 <p>Copywrite @ All Right Reserved</p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-12 d-flex flex-column justify-content-between align-items-end h-100">
-                            <form class="w-100 d-flex justify-content-end" action="#" onSubmit="footerSignup(event)" >
+                        <div class="col-md-6 col-12 d-flex flex-column justify-content-between align-items-md-end align-items-center h-100">
+                            <form class="w-100 d-flex justify-content-md-end justify-content-center" action="#" onSubmit="footerSignup(event)" >
                                 <div class="footer_newsletter newsletter">
                                     <p>Subscribe to our newsletter</p>
                                     <div class="input-box">
@@ -37,6 +37,10 @@
                                 <a href="www.linkedin.com">
                                     <i class="fa fa-linkedin"></i>
                                 </a>
+                            </div>
+
+                            <div class="site-footer_copywrite-mobile">
+                                <p>Copywrite @ All Right Reserved</p>
                             </div>
                         </div>
                     </div>
